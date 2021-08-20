@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ################ NAVBAR############### */
+
+.navbar{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;  
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem; 
+    font-weight: 500;
+    align-items: center;
+}
+
+li{
+    margin: 10px;
+    list-style: none;
+}
+
+.nav-items a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 15px;    
+}
+
+.nav-items:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.nav:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ################ NAVBAR############### */
+
+/* ################# HOME ############### */
+
+.home{
+    display: flex;
+    height:auto;
+    width: auto;
+}
+
+.image img{
+    margin-top: 60px;
+    height: 70vh;
+    width: 60vw;
+}
+
+.intro{
+    text-align: center;
+    align-self: center;
+}
+
+.intro span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #198894;
+}
+
+.intro p{
+    font-size: 1.2rem;
+   text-align: center;
+   margin: 0 20px;
+}
+
+/* ################# HOME ############### */
+
+
+/* ############### PRODUCTS ############# */
+
+.product{
+    height: auto;
+    width: 100vw;
+}
+
+.product_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heading{
+    margin-top: 50px;
+    font-size: 3rem;
+    text-align: center;
+    color: #198894;
+}
+
+.box{
+    height: auto;
+    width: 400px;
+    /* border: 2px solid black; */
+    margin: 60px ;
+
+}
+
+.box img{
+    width: 100%;
+    height: 300px;
+    margin: 10px 5px;
+}
+
+.sname{
+    text-align: center;
+    font-size: 2rem;
+    color: #198894;
+}
+
+.sprice{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #198894;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+}   
+
+/* ############### PRODUCTS ############# */
+
+
+/* ############### CONTACT US ############# */
+
+/* .contact_container{
+    display: flex;
+    
+} */
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+  .flex-outer {
+    list-style-type: none;
+    padding: 0;
+    /* border: 2px solid red; */
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *{
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+
+  label{
+      color: #198894;
+      font-weight: bold;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #198894;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+  
+  .information{
+      display: flex;
+      justify-content: center;
+  }
+
+  .info{
+      /* border: 2px solid red; */
+      margin: 20px;
+      align-self: center;
+  }
+
+  .info img{
+      height: 300px;
+      width: 300px;
+  }
+
+  .pname{
+      font-size: 1rem;
+      text-align: center;
+  }
+  
+  .qualification{
+      font-size: 1rem;
+      text-align: center;
+  }
+
+/* ############### CONTACT US ############# */
+
+
+
+
+
+
+
+
+@media all and (max-width: 713px) {
+    .navbar,.home,.product_container {
+    flex-direction: column;
+    }
+
+    .navbar{
+        font-size: .8rem;
+    }
+
+    .navitems,.box {
+    text-align: center;
+    align-self: center;
+    }
+
+    .nav-items:first-child {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .image img{
+        display: block;
+        margin: auto;
+    }
+
+    .intro span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .intro p{
+        font-size: .8rem;
+        word-wrap: break-word;
+    }
+
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .box{
+        height: auto;
+        width: 50vw;
+        margin: 30px ;
+    
+    }
+    
+    .box img{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+    .sname{
+        font-size: 1.2rem;
+    }
+    .sprice{
+        font-size: 1rem;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .information{
+        flex-wrap: wrap;
+    }
+    .info img{
+        display: block;
+        margin: auto;
+        height: 150px;
+        width: 150px;
+    }
+
+    }
